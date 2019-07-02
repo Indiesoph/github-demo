@@ -1,9 +1,12 @@
 .e-book-table-mobile-div {
   display: none;
 }
-@media only screen and (max-width: 767px) {
+@media screen and (max-device-width: 766px) {
   .e-book-table-mobile-div {
     display: block;
+  }
+  .e-book-table-desktop {
+    display: none;
   }
 }
 .e-book-table-mobile {
@@ -37,9 +40,4 @@
 }
 .e-book-table-desktop td:nth-child(2,3,4) {
   width: 26%;
-}
-@media (max-width: 766px) {
-  .e-book-table-desktop {
-    display: none;
-  }
 }
