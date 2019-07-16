@@ -21,8 +21,15 @@ body {
   font-size: 2em;
   display: inline-block;
   margin: 10px;
-  
+  vertical-align: middle;
+}
 
+@media screen and (max-width: 766px) {
+  .navigation-button-piano-guide 
+  {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 .navigation-button-piano-guide:hover
