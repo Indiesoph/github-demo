@@ -2,41 +2,47 @@ body {
   font-family: 'maven-light', sans-serif;
 }
 
+.nav-piano-gui
+{
+max-width: 900px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
 .navigation-piano-guide
 {
-  display: flex; 
-  justify-content: center; 
-  align-items: center;
+  height: 0;
+  width: 6%;
+  display: inline-block;
+  margin-top: -2.5em;
+}
+
+@media screen and (max-width: 766px) {
+  .navigation-piano-guide
+  {
+    width: 15%;
+    margin-top: -2em;
+  }
 }
 
 .navigation-button-piano-guide
 {
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 100%;
   background-color: #EF7D00;
+  /* border: 2px solid #EF7D00; */
   color: #FFF;
-  height: 75px;
-  width: 75px;
-  text-align: center;
-  font-size: 2em;
+  height: 0;
+  width: 100%;
   display: inline-block;
-  margin: 10px;
-  vertical-align: middle;
-}
-
-@media screen and (max-width: 766px) {
-  .navigation-button-piano-guide 
-  {
-    height: 50px;
-    width: 50px;
-  }
+  box-shadow: 0 0 3px gray;
+  padding-bottom: 100%;
 }
 
 .navigation-button-piano-guide:hover
 {
   background-color: #fff;
-  border: 2px solid #EF7D00;
-  color: #000;
   -webkit-transition-duration: 1s; /* Safari */
   transition-duration: 1s;
 }
@@ -47,15 +53,61 @@ body {
 
 }
 
+.navigation-button-piano-guide a
+{
+  display:block;
+  width:100%;
+	padding-top:50%;
+  padding-bottom:50%;
+  line-height:2.5em;
+  font-size: 2.5em;
+	margin-top:-1em;
+  text-decoration: none;  
+  text-align:center;
+  color: #FFF;
+}
+@media screen and (max-width: 766px) {
+  .navigation-button-piano-guide a
+{
+  line-height: 2em;
+  font-size: 2em;
+  margin-top: -0.75em;
+}
+}
+.navigation-button-piano-guide a:hover
+{
+  color: #EF7D00;
+  -webkit-transition-duration: 1s; /* Safari */
+  transition-duration: 1s;
+}
+
 .navigation-previous
 {
-  margin: 10px;
+  padding-left: 3%;
+  padding-right: 9%;
 }
+ @media screen and (max-width: 766px) {
+   .navigation-previous
+   {
+     padding-left: 3.5%;
+     padding-right: 3.5%;
+   }
+ }
+
+
 
 .navigation-next
 {
+  padding-right: 3%;
+  padding-left: 9%;
   text-align: right;
-  margin: 10px;
+}
+@media screen and (max-width: 766px) {
+  .navigation-next
+  {
+    padding-right: 3.5%;
+    padding-left: 3.5%;
+  }
 }
 
 .navigation-headline
